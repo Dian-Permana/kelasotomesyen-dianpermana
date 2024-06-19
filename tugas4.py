@@ -1,6 +1,9 @@
 from selenium import webdriver
 
-driver = webdriver.Chrome()
+options = webdriver.ChromeOptions()
+options.add_experimental_option("detach", True)
+driver = webdriver.Chrome(options=options)
+
 driver.minimize_window()
 mylist = ["tiket.com","tokopedia.com","orangsiber.com","demoqa.com","automatetheboringstuff.com"]
 
