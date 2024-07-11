@@ -8,7 +8,7 @@ def setup():
     options.add_experimental_option("detach", True)
 
     driver = webdriver.Chrome(options=options)
-    driver.implicitly_wait(30)
+    driver.implicitly_wait(10)
     driver.maximize_window()
 
     driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
