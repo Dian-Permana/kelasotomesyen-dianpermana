@@ -35,7 +35,7 @@ input_output = [
 
 def test_login_NG(setup, username, password, notifikasi, notifikasi_text):
     """
-    login dengan menggunakan username salah dan password yang benar
+    login dengan menggunakan username dan password yang salah
     """
     setup.find_element(By.NAME,"username").send_keys(username) #username
     setup.find_element(By.NAME,"password").send_keys(password) #password
